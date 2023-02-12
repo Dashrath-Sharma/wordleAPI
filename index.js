@@ -10,7 +10,7 @@ const words = require('./words.json')
 const port = process.env.PORT || 3000;
 
 //Sending Array of 5 Letter words
-app.get('/', (req, res) => {
+app.get('/api/v1/words', (req, res) => {
     res.send(words)
 });
 
